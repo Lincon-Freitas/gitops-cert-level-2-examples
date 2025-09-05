@@ -18,8 +18,8 @@ spec:
     path: ./environment-promotion/envs/qa
    
     # directory
-    directory:
-      recurse: true
+    # directory:
+    #   recurse: true
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
