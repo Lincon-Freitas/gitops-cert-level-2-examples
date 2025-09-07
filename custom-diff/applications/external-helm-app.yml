@@ -23,8 +23,8 @@ spec:
       jsonPointers:
         - /metadata/annotations/creation
     - kind: Secret
-      jqPathExpressions:
-        - .data | select(.my-password)
+      jsonPointers:
+        - /data/my-password
 
   # Sync policy
   syncPolicy:
