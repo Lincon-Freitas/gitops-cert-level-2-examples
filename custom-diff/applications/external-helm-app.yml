@@ -24,7 +24,7 @@ spec:
         - /metadata/annotations/creation
     - kind: Secret
       jqPathExpressions:
-        - .data.my-password
+        - .data | select(.my-password)
 
   # Sync policy
   syncPolicy:
